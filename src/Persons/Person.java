@@ -8,7 +8,7 @@ package Persons;
  *
  * @author User
  */
-public class Person {
+public abstract class Person {
     private String cedula;
     private String name;
     private String correo;
@@ -18,8 +18,8 @@ public class Person {
         return cedula.hashCode();
     }
 
-    public String getName() {
-        return name;
+    public int getName() {
+        return name.hashCode();
     }
 
     public void setCorreo(String correo) {
